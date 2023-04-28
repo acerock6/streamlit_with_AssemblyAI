@@ -14,7 +14,6 @@ def get_url(token,data):
   response = requests.post('https://api.assemblyai.com/v2/upload',
                          headers=headers,
                          data=data)
-  print('printing response below: /n' ,response)
   url = response.json()["upload_url"]
   print("Uploaded File and got temporary URL to file")
   return url
