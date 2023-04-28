@@ -2,7 +2,7 @@ import streamlit as st
 from transcribe import *
 import time
 
-st.header("Trascribe Audio")
+st.header("Vire Audio Transcription")
 
 fileObject = st.file_uploader(label = "Please upload your file" )
 if fileObject:
